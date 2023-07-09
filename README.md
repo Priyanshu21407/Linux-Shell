@@ -89,11 +89,11 @@ a. -i: asks for confirmation before every removal of a file
 b. -v: displays what is being done 
 
 errors handled: 
-a. Path provided doesn't point to a regular file for its deletion __
-b. invalid option provided for confirmation regarding deletion of the file under the option '-i' __
-c. invalid option __
-d. option not provided __ 
-e. path not provided  __
+a. Path provided doesn't point to a regular file for its deletion 
+b. invalid option provided for confirmation regarding deletion of the file under the option '-i' 
+c. invalid option 
+d. option not provided 
+e. path not provided  
 
 * mkdir 
 
@@ -122,19 +122,34 @@ sing the second type of implementation.
 Assumption "test" folder should be present in the working directory in order to run the test case successfully. 
 
 # TEST CASE: 
-ls -a __
-ls&t -i __
-cat&t -b ./test/testfile __
-cat -n ./test/testfile __
-date -u __
+ls -a 
+
+ls&t -i
+
+cat&t -b ./test/testfile 
+
+cat -n ./test/testfile
+
+date -u 
+
 date&t -r ./test 
+
 rm -i ./test/testfile 
+
 rm&t -v ./test/testfile 
+
 mkdir -v ./fold1 
+
 mkdir&t -p ./fold2/fold1 
+
 cd ~ 
+
 pwd -P 
+
 cd -L .. 
+
 pwd -L 
+
 echo -n hello there 
+
 echo -E hi there
